@@ -53,7 +53,7 @@ python s3_usage_and_cost_calculator.py
 	    • usage_<output_file>.csv: A report of the storage usage in a human-readable format (e.g., GB, MB).
 	    • cost_<output_file>.csv: A report of the estimated costs based on the usage and pricing tiers.
 
-Example 
+## Example 
 
 ```
 Enter start date (YYYY-MM-DD): 2024-01-01
@@ -65,6 +65,55 @@ After running, you’ll find the following files in the output directory:
 
 	•	output/usage_s3_report.csv
 	•	output/cost_s3_report.csv
+
+Here's how you can display the `output/usage_s3_report.csv` and `output/cost_s3_report.csv` examples in Markdown code:
+
+### Example of `usage_s3_report.csv`
+
+The `usage_s3_report.csv` file contains the storage usage information for each S3 bucket, broken down by month and storage class. Here's an example of the content:
+
+```csv
+Month,Bucket_A.STANDARD,Bucket_B.STANDARD,Total
+2024-01,15.25 GB,22.75 GB,38.00 GB
+2024-02,10.50 GB,25.00 GB,35.50 GB
+2024-03,12.00 GB,30.00 GB,42.00 GB
+```
+
+### Example of `cost_s3_report.csv`
+
+The `cost_s3_report.csv` file contains the estimated cost for each bucket and storage class, based on the pricing tiers. Here's an example of the content:
+
+```csv
+Month,Bucket_A.STANDARD,Bucket_B.STANDARD,Total
+2024-01,$0.38,$0.57,$0.95
+2024-02,$0.26,$0.63,$0.89
+2024-03,$0.30,$0.76,$1.06
+```
+
+### Visual Example of the Output
+
+#### `output/usage_s3_report.csv`:
+```
++-------+-------------------+-------------------+---------+
+| Month | Bucket_A.STANDARD  | Bucket_B.STANDARD  | Total   |
++-------+-------------------+-------------------+---------+
+| 2024-01 | 15.25 GB        | 22.75 GB           | 38.00 GB|
+| 2024-02 | 10.50 GB        | 25.00 GB           | 35.50 GB|
+| 2024-03 | 12.00 GB        | 30.00 GB           | 42.00 GB|
++-------+-------------------+-------------------+---------+
+```
+
+#### `output/cost_s3_report.csv`:
+```
++-------+-------------------+-------------------+---------+
+| Month | Bucket_A.STANDARD  | Bucket_B.STANDARD  | Total   |
++-------+-------------------+-------------------+---------+
+| 2024-01 | $0.38           | $0.57             | $0.95   |
+| 2024-02 | $0.26           | $0.63             | $0.89   |
+| 2024-03 | $0.30           | $0.76             | $1.06   |
++-------+-------------------+-------------------+---------+
+```
+
 
 
 ## Configuration
