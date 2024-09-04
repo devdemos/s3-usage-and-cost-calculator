@@ -21,7 +21,7 @@ This repository provides a Python script to calculate AWS S3 usage and estimate 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/s3-usage-and-cost-calculator.git
+   git clone https://github.com/devdemos/s3-usage-and-cost-calculator.git
    cd s3-usage-and-cost-calculator
 
 2.	Create a virtual environment and install the required dependencies:
